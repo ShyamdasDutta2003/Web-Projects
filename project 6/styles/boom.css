@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1600px;
+    width: 90%;
+    margin: auto;
+}
+
+.violet{
+    color: #6c5ce7;
+}
+
+/* HEADER AREA STYLING */
+.navbar{
+    display: flex;
+}
+
+.logo{
+    margin: 1em;
+}
+
+.list-content{
+    margin: 0 1em;
+}
+
+.list-content .list-item{
+    display: flex;
+}
+
+.list-item li{
+    list-style: none;
+    padding: 2em;
+}
+
+.list-item li a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.list-item a:hover{
+    text-decoration: underline;
+}
+
+.btn1{
+    margin: auto 0 auto auto;
+}
+
+.btn1 button{
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px #00000091;
+}
+
+.btn1 button:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.btn1 a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+}
+
+.btn1 a:hover{
+    color: #6c5ce7;
+}
+
+/* MAIN AREA STYLING */
+.main-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{
+    margin-right: 2em;
+}
+
+.left-side .main-header{
+    font-size: 3rem;
+}
+
+.left-side .main-para{
+    font-size: 1.5rem;
+}
+
+.left-side .main-btn{
+    margin-top: 3em;
+}
+
+.main-btn button{
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px #00000091;
+}
+
+.main-btn button:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.main-btn a{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-btn a:hover{
+    color: #6c5ce7;
+}
+
+.right-side{
+    margin-left: 2em;
+}
