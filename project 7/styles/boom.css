@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: url(../assets/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* HEADER AREA STYLING */
+.navbar{
+    display: flex;
+    background-color: #000;
+    height: 8vh;
+}
+
+.navbar .logo{
+    margin: 0 2em;
+    padding: 1em;
+}
+
+.navbar .st-line{
+    margin: 0.8em 2em;
+    height: 80%;
+    background-color: #ffffff;
+    border: 1px solid #fff;
+}
+
+.list .list-item{
+    display: flex;
+}
+
+.list-item li{
+    list-style: none;
+    padding: 2em;
+}
+
+.list-item li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.list-item li a:hover{
+    color: #ffffffe5;
+}
+
+.navbar .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5em 2em;
+}
+
+.btn button{
+    background-color: #be2edd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px #ffffff53;
+}
+.btn button:hover{
+    background-color: #fff;
+}
+
+.btn button a{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+button a:hover{
+    color: #be2edd;
+}
+
+
+/* MAIN AREA STYLING */
+main{
+    height: 92vh;
+    background: url(../assets/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    text-align: center;
+}
+
+.main-header{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.main-para{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.main-btn button{
+    margin: 3em auto;
+    background-color: #be2edd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px #ffffff53;
+}
+.main-btn button:hover{
+    background-color: #fff;
+}
+
+.main-btn button a{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+.main-btn button a:hover{
+    color: #be2edd;
+}
