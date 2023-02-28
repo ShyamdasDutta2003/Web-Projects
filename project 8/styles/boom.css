@@ -1,0 +1,79 @@
+.box{
+    /* margin: auto; */
+    padding: 1.5em;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box1{
+    margin: auto;
+    background-color: #7fffd4;
+    display: none;
+}
+
+.box2{
+    margin: auto;
+    background-color: #008000;
+    display: none;
+}
+
+.box3{
+    margin: auto;
+    background-color: #96700e;
+    display: none;
+}
+
+.box4{
+    margin: auto;
+    background-color: #00ffff;
+    display: none;
+}
+
+.box5{
+    margin: auto;
+    background-color: #ff0000c0;
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:1441px){
+    .box1{
+        display: block;
+        height: 80vh;
+        width: 90vw;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1440px){
+    .box2{
+        display: block;
+        height: 75vh;
+        width: 80vw;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .box3{
+        display: block;
+        height: 55vh;
+        width: 75vw;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    .box4{
+        display: block;
+        height: 50vh;
+        width: 60vw;
+    }
+}
+
+@media (max-width:425px){
+    .box5{
+        display: block;
+        height: 35vh;
+        width: 50vw;
+    }
+}
+
+/* WAS I SUPPOSED TO USE 'VH' AND 'VW' FOR HEIGHT AND WIDTH, I FORGOT */
