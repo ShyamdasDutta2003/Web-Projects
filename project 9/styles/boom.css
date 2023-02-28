@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #020113;
+}
+
+/* HEADER AREA STYLING */
+.navbar{
+    background-color: #000;
+    height: 6vh;
+}
+
+.navbar .list-item{
+    display: flex;
+    justify-content: end;
+}
+
+.list-item li{
+    list-style: none;
+    padding: 1em;
+}
+
+.list-item li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.list-item .bgc-blue a{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 0.3em;
+}
+
+.list-item li a:hover{
+    color: #ffffffe2;
+    text-decoration: underline;
+}
+
+.navbar .ham img{
+    display: none;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+/* MAIN AREA STYLING */
+/* TOP SECTION STYLING */
+.top{
+    display: flex;
+    justify-content: center;
+    margin: 0 2em;
+}
+
+.left{
+    color: #fff;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left .img-cont img{
+    height: 30px;
+    width: 30px;
+    margin-right: 0.5em;
+}
+
+.img-cont{
+    display: flex;
+}
+
+.left h1{
+    font-size: 2rem;
+}
+
+.left p{
+    color: #ffff00;
+}
+
+.right{
+    margin-left: 1em;
+}
+
+.right img{
+    height: 500px;
+    width: 500px;
+}
+
+/* BOTTOM SECTION STYLING */
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.mid-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,350px);
+}
+
+.mid-body .img{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.mid-body .img img{
+    height: 300px;
+    width: 300px;
+    transition: all 300ms ease-in-out;
+}
+
+.mid-body .img img:hover{
+    height: 350px;
+    width: 350px;
+}
+
+.bottom a{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: underline 4px solid #0000ff;
+}
+
+.bottom a:hover{
+    color: #ffffffdd;
+}
+
+/* FOOTER AREA STYLING */
+.footer-cont{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: #000;
+}
+
+.footer-cont a img{
+    height: 30px;
+    width: 30px;
+}
+
+.footer-cont .img1,.footer-cont .img2,.footer-cont .img3{
+    margin: 10px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.footer-cont .img1:hover,.footer-cont .img2:hover,.footer-cont .img3:hover{
+    box-shadow: 1px 1px 1px 1px #ffffff8d;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:768px){
+    .navbar .list-item{
+        display: none;
+    }
+
+    .navbar .ham img{
+        display: block;
+    }
+    .navbar .ham img:hover{
+        padding: 7px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px 1px #fff;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .mid-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,350px);
+        margin: 3em 0;
+    }
+
+    .mid-body img{
+        padding: 1.4em 0;
+    }
+}
+
+/* THANKS FOR READING UPTO HERE :)) */
