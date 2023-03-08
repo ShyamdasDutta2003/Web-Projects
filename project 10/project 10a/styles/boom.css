@@ -1,0 +1,1014 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #00090f;
+    width: 70%;
+    max-width: 2100px;
+    margin: auto;
+}
+
+/* HEADER AREA STYLING */
+.navbar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/* LEFT SIDE STYLING */
+.left{
+    display: flex;
+    width: 50%;
+    margin: 0 5em;
+    justify-content: space-between;
+}
+
+.navbar .left .logo{
+    padding: 3em;
+}
+
+.navbar .left .logo img{
+    cursor: pointer;
+}
+
+.navbar .left .head-img img{
+    height: 80%;
+    width: 400px;
+    padding-right: 10em;
+}
+
+/* RIGHT SIDE STYLING */
+.right{
+    width: 50%;
+    margin: 0 5em;
+}
+
+.right .nav-items ul{
+    position: fixed;
+    display: flex;
+    padding: 3em;
+    z-index: 2;
+    background-color: #00090f;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.nav-items ul li{
+    list-style: none;
+    padding: 0 3em;
+}
+
+.nav-items ul li a{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-items ul li a:hover{
+    color: #ffffffdc;
+}
+
+.nav-items ul li:active{
+    border-radius: 5px;
+    background-color: #282727;
+    box-shadow: -3px -2px 0 2px #ffffff5e;
+}
+
+.right .img-cont{
+    margin-top: 8em;
+}
+
+.img-cont img{
+    position: relative;
+    left: 20%;
+    margin: 2em 0;
+}
+
+.text-cont{
+    position: relative;
+    color: #fff;
+    width: 35%;
+    left: 18%;
+}
+
+.text-cont h1{
+    font-size: 3.5rem;
+}
+
+.text-cont h2{
+    font-size: 2rem;
+}
+
+.text-cont h2,.text-cont p{
+    margin: 2em 0;
+}
+
+.right .text-cont .para{
+    font-size: 1.5rem;
+}
+
+.text-cont-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    background-color: #433f3f5e;
+    font-size: 1.3rem;
+}
+
+.text-cont-foot img{
+    height: 30px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.text-cont-foot img,.text-cont-foot p,.text-cont-foot h2{
+    padding: 0 1em;
+}
+
+/* MAIN AREA CODING */
+/* CONT-1 STYLING */
+.cont-1{
+    margin: 5em;
+    text-align: center;
+}
+
+.comp-logo a{
+    padding: 0 9em;
+}
+
+/* CONT-2 STYLING */
+.cont-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em;
+}
+
+.spec{
+    height: 600px;
+    width: 700px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* LEFT-SPEC STYLING */
+.left-spec{
+    text-align: start;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+.first{
+    margin-left: 5rem;
+}
+
+.second{
+    margin: 3rem 0;
+}
+
+.third{
+    margin: 3rem 0;
+}
+
+.fourth{
+    margin-left: 5rem;
+}
+
+/* RIGHT-SPEC STYLING */
+.right-spec img{
+    height: 100%;
+    width: 100%;
+}
+
+/* CONT-3 STYLING */
+.cont-3{
+    margin: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.bottom-cont .text-cont p{
+    font-size: 2.3rem;
+}
+
+.bottom-cont .text-cont .bottom-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #433f3f5e;
+    border-radius: 20px;
+}
+
+.bottom-cont .text-cont .bottom-box img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* CONT-4 STYLING */
+.cont-4{
+    width: 80%;
+    margin: 10em auto;
+    padding: 2em;
+    background-color: #433f3f5e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cont-4 .text-cont{
+    padding-bottom: 3em;
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+.cont-4 .text-cont .sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #00090f;
+    padding: 10px;
+}
+
+.cont-4 .text-cont .sec img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.cont-4 .img-cont{
+    width: 30%;
+    margin-right: 10%;
+}
+
+/* CONT-5 STYLING */
+.cont-5{
+    margin: 5em;
+}
+
+.cont-5 .img-container img{
+    position: relative;
+    left: 40%;
+    margin-bottom: 3em;
+}
+
+.cont-5 .products .product{
+    /* border: 1px dotted yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #433f3f5e;
+    margin: 2em;
+}
+
+.product .img-cont img{
+    height: 70%;
+    width: 60%;
+}
+
+.product .text-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    left: 15%;
+    bottom: 30%;
+}
+
+.product .text-cont img{
+    border-radius: 30%;
+    box-shadow: 0 2px 0 10px #00090f;
+    height: 30px;
+    width: 30px;
+    margin-left: 5em;
+    cursor: pointer;
+}
+
+
+.products{
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+/* FOOTER AREA STYLING */
+.foot{
+    margin: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot .logo{
+    /* margin-top: 3em; */
+    cursor: pointer;
+    padding: 0 3em;
+}
+
+.foot .text-cont{
+    position: relative;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.left-cont ul li,.right-cont ul li{
+    list-style: none;
+    padding: 1em;
+}
+
+.left-cont ul li a,.right-cont ul li a{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-cont a:hover,.right-cont a:hover{
+    color: #ffffffdc;
+}
+
+.foot .text-cont h2{
+    padding-left: 0.5em;
+}
+
+.links .top .left{
+    background-color: #433f3f5e;
+    margin: 0 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+.links{
+    padding-right: 3.5em;
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .top .left .sub{
+    background-color: #00090f;
+    padding: 0.5em 1em;
+}
+
+.links .top .left input[type="email"]{
+    background-color: #18171700;
+    border: none;
+    color: #fff;
+}
+
+.sub button{
+    border: none;
+    background-color: #00090f;
+    margin-left: 1em;
+}
+
+.sub button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub button a:hover{
+    color: #ffffffdc;
+}
+
+.links .top .left,.links .top .left .sub{
+    border-radius: 5px;
+}
+
+.links .top{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links .top .right{
+    margin-left: 10em;
+}
+
+.links .bottom{
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fixed{
+    position: fixed;
+    padding: 1em 3em;
+    right: 0;
+    bottom: 0;
+}
+
+/* MEDIA QUERIES */
+@media(min-width:1440px){
+    .navbar .right .nav-items ul{
+        right: 10%;
+    }
+
+    .navbar .right .text-cont{
+        width: 250px;
+    }
+
+    .cont-1{
+        width: 100%;
+    }
+
+    .comp-logo a{
+        padding: 7em;
+    }
+
+    .cont-4{
+        width: 100%;
+    }
+
+    .cont-4 .text-cont{
+        position: relative;
+        left: -50px;
+    }
+
+    .cont-4 .text-cont .sec{
+        width: 200px;
+    }
+
+    .foot .links{
+        margin-left: 10em;
+    }
+}
+
+@media(max-width:1260px){
+    .navbar .logo{
+        margin-left: 10em;
+    }
+
+    .navbar .right{
+        margin-right: 35em;
+    }
+
+    .navbar .right .nav-items ul{
+        right: 10%;
+    }
+
+    .navbar .right .text-cont{
+        width: 350px;
+    }
+
+    .navbar .left .head-img img{
+        padding-right: 5em;
+        width: 300px;
+    }
+
+    .cont-1{
+        margin: auto;
+    }
+
+    .cont-1 .comp-logo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,100px);
+    }
+
+    .cont-3{
+        margin: auto;
+    }
+
+    .cont-3 .bottom-cont .text-cont{
+        margin-right: 25em;
+    }
+
+    .cont-4{
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .cont-4 .img-cont{
+        margin-right: 30%;
+    }
+
+    .cont-4 .text-cont .sec{
+        width: 150px;
+    }
+
+    .cont-5{
+        margin: auto;
+    }
+
+    .foot{
+        margin: 10em;
+        width: 100%;
+    }
+
+    .foot .links{
+        margin-left: 5em;
+    }
+}
+
+@media (max-width:1024px){
+    .navbar{
+        margin: 0 10em;
+    }
+
+    .navbar .right .nav-items ul{
+        right: 5%;
+    }
+
+    .navbar .right .img-cont{
+        position: relative;
+        right: 30%;
+    }
+
+    .cont-3{
+        margin-left: 8em;
+    }
+
+    .cont-3 .bottom-cont .text-cont{
+        width: 300px;
+    }
+
+    .cont-4{
+        width: 800px;
+        position: relative;
+        right: 30px;
+    }
+
+    .cont-4 .text-cont{
+        width: 200px;
+        position: relative;
+        left: 5%;
+    }
+
+    .foot{
+        width: 800px;
+        position: relative;
+        right: 100px;
+    }
+
+    .foot .links{
+        margin-left: 8em;
+    }
+}
+
+@media (max-width:900px){
+
+    .navbar .head-img{
+        height: 70%;
+        position: relative;
+        left: 70px;
+    }
+
+    .right .nav-items ul{
+        flex-direction: column;
+        position: relative;
+        left: -400px;
+        bottom: -80px;
+        width: 150px;
+    }
+
+    .right .nav-items ul li{
+        padding: 2em 0;
+    }
+
+    .navbar .right .img-cont{
+        position: relative;
+        top: -450px;
+    }
+
+    .navbar .right .text-cont{
+        position: relative;
+        top: -450px;
+        left: 120px;
+    }
+
+    .navbar .right .img-cont img{
+        height: 100px;
+        width: 300px;
+        position: relative;
+        left: 210px;
+    }
+
+    .cont-1,.cont-2,.cont-3,.cont-4,.cont-5,.foot{
+        position: relative;
+        top: -350px;
+    }
+
+    .cont-2 .spec{
+        width: 600px;
+        height: 500px;
+    }
+
+
+    .cont-3 .bottom-cont{
+        flex-direction: column;
+        margin-right: 5em;
+        width: 800px;
+    }
+
+    .cont-3 .top-img{
+        margin-right: 5em;
+    }
+
+    .cont-4{
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15em;
+    }
+
+    .cont-4 .img-cont{
+        margin-right: 27em;
+    }
+
+    .foot{
+        width: 85%;
+        position: relative;
+        right: 150px;
+    }
+
+    .foot{
+        display: grid;
+        grid-template-columns: 200px,400px;
+        grid-template-rows: 250px;
+    }
+
+    .foot .logo{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 90%;
+    }
+
+    .foot .text-cont{
+        width: 350px;
+        height: 300px;
+        position: relative;
+        left: 55%;
+    }
+
+    .foot .links{
+        position: relative;
+        top: 20%;
+        left: 55%;
+    }
+
+    .cont-5 .img-container{
+        position: relative;
+        right: 8%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .head-img{
+        height: 80%;
+        position: relative;
+        left: 200px;
+    }
+
+    .navbar .right .img-cont{
+        display: none;
+    }
+    .navbar .right .text-cont{
+        position: relative;
+        top: 65px;
+        left: -100px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .text-cont-foot{
+        position: relative;
+        left: 25px;
+    }
+
+    .navbar .right .img-cont{
+        position: relative;
+        left: -280px;
+    }
+
+    .right .nav-items{
+        position: relative;
+        right: -80px;
+    }
+
+    .cont-1,.cont-2,.cont-3,.cont-4,.cont-5,.foot{
+        position: relative;
+        right: -20px;
+        top: 200px;
+    }
+
+    .cont-2 .spec{
+        height: 450px;
+        width: 450px;
+    }
+
+    .bottom-cont .text-cont p{
+        font-size: 2rem;
+    }
+
+    .cont-3 .bottom-cont{
+        width: 600px;
+    }
+
+    .cont-4{
+        width: 400px;
+        margin-left: 4em;
+    }
+
+    .cont-4 .img-cont{
+        margin-right: 33em;
+    }
+
+    .cont-5 .img-container{
+        margin-right: 9em;
+    }
+
+    .foot{
+        position: relative;
+        right: 120px;
+    }
+
+    .foot .logo{
+        left: 70%;
+    }
+
+    .foot .text-cont{
+        left: 35%;
+    }
+
+    .foot .links{
+        left:35%;
+    }
+}
+
+@media (min-width:501px) and (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .right .text-cont{
+        margin-left: 10em;
+    } 
+
+    .navbar .right .nav-items{
+        left: -250px;
+    }
+
+    .navbar .head-img{
+        height: 80%;
+        position: relative;
+        left: 200px;
+    }
+
+    .navbar .right .img-cont{
+        position: relative;
+        left: -100%;
+    }
+
+    .navbar .right .text-cont{
+        top: 150px;
+        left: -150px;
+    }
+
+    .navbar .right .nav-items ul li{
+        padding: 1em;
+    }
+
+    .navbar .right .nav-items ul{
+        position: relative;
+        left: -30px;
+    }
+
+    .navbar .text-cont .text-cont-foot{
+        width: 300px;
+        left: -10px;
+    }
+
+    .cont-1{
+        position: relative;
+        left: -40px;
+    }
+
+    .cont-2{
+        margin-left: 37em;
+    }
+
+    .cont-2 img{
+        position: relative;
+        left: 17%;
+    }
+
+    .cont-2 .spec{
+        position: relative;
+        left: 10%;
+        height: 350px;
+        width: 350px;
+    }
+
+    .cont-2 .spec .left-spec{
+        font-size: 0.8rem;
+    }
+
+    .cont-3{
+        margin-left: 48em;
+    }
+
+    .cont-3 .top-img{
+        position: relative;
+        left: 14%;
+    }
+
+    .cont-3 .bottom-cont{
+        position: relative;
+        left: 15%;
+    }
+
+    .cont-3 .bottom-cont .text-cont{
+        width: 350px;
+    }
+
+    .cont-4{
+        margin-left: 22em;
+        width: 350px;
+    }
+
+    .cont-4 .img-cont img{
+        height: 200px;
+        width: 330px;
+    }
+
+    .cont-5{
+        margin-left: 8em;
+    }
+
+    .cont-5 .img-container{
+        position: relative;
+        left: 5px;
+    }
+
+    .cont-5 .products{
+        position: relative;
+        left: 12%;
+    }
+
+    .foot{
+        margin-right: 1em;
+    }
+}
+
+@media (max-width:500px){
+    body{
+        margin-left: 28em;
+    }
+
+    .navbar .nav-items{
+        display: none;
+    }
+
+    .navbar .logo{
+        position: relative;
+        left: -70px;
+    }
+
+    .navbar .right .text-cont{
+        position: relative;
+        top: 400px;
+        left: -100px;
+    }
+
+    .cont-1{
+        position: relative;
+        left: -90px;
+    }
+
+    .cont-1 .comp-logo a{
+        padding:0.5em;
+        position: relative;
+        left: 120px;
+    }
+
+    .cont-2 img{
+        position: relative;
+        left: 40px;
+    }
+
+    .cont-2 .left-spec{
+        font-size: 1rem;
+    }
+
+    .cont-2 .spec{
+        height: 200px;
+        width: 300px;
+        margin: 10em 0;
+    }
+
+    .cont-3 .top-img{
+        position: relative;
+        left: 20px;
+    }
+
+    .cont-3 .bottom-cont img{
+        height: 250px;
+        width: 200px;
+        position: relative;
+        left: 20px;
+    }
+
+    .cont-3 .bottom-cont .text-cont{
+        width: 200px;
+        margin-left: 5em;
+    }
+
+    .cont-4{
+        width: 260px;
+        position: relative;
+        left: 60px;
+    }
+
+    .cont-4 .img-cont img{
+        height: 200px;
+        width: 250px;
+        position: relative;
+        left: 40px;
+    }
+
+    .cont-5{
+        position: relative;
+        left: -20px;
+    }
+
+    .cont-5 .img-container img{
+        height: 100px;
+    }
+
+    .cont-5 .img-container{
+        margin-left: 10em;
+    }
+
+    .cont-5 .products{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(5,1fr);
+        position: relative;
+        left: 150px;
+    }
+
+    .products .product .text-cont{
+        margin-top: 3.5em;
+    }
+
+    .foot{
+        position: relative;
+        left: -170px;
+    }
+
+    .foot .text-cont{
+        width: 300px;
+        position: relative;
+        left: 175px;
+    }
+
+    .foot .links{
+        left: 110px;
+    }
+}
