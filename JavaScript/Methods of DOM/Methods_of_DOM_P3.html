@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 3</title>
+</head>
+<body>
+    <h1>Hello Everyone</h1>
+    <p id="js"></p>
+    <button onclick="hey()" id="jss">Submit</button>       <!-- This will call hey function when we click on the button -->
+
+    <script>
+        // Event Listener on the whole body
+        document.addEventListener("click", hello);      // This means whenever we click, hello function will occur
+        function hello(){                               // similarly we have dblclick, mouseenter
+            document.getElementById("js").innerText = "Hey There !!"
+        }
+
+        function hey(){
+            document.getElementById("jss").innerText = "Clicked";
+            document.getElementById("jss").style.color = "white";
+            document.getElementById("jss").style.backgroundColor = "black";
+            document.getElementById("jss").style.padding = "20px";
+            document.getElementById("jss").style.border = "2px solid red";
+        }
+    </script>
+</body>
+</html>

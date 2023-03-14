@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 1</title>
+</head>
+<body>
+    <!-------------------ID----------------------->
+    <p id="one"><span>Hello There</span></p>
+
+    <!-----------------ClASS---------------------->
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+
+    <!-----------------TAG NAME------------------>
+    <h4>Hey</h4>
+    <h4>Hello</h4>
+    <h4>Hii</h4>
+
+    <!----------------QUERY SELECTOR---------------->
+    <h2>Hello</h2>
+    <h2 class="cls">Hiiii</h2>
+    <h2 id="id">Heyy</h2>
+    
+    <script>
+        // ID
+        let var1 = document.getElementById("one");
+        console.log(var1);      // This will print the whole element along with the tags in the console section when we inspect our web page.
+        console.log(var1.innerText);        // This will only print the inner text of the specified element (even if there are other tags inside the main tag, it will only print the text and not the tags).
+        console.log(var1.innerHTML);        // Unlike innenText, this will print everything inside the html tag, other tags will also be printed that are inside the main tags.
+
+        // CLASS
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2);
+        console.log(var2[2]);           // This will target the 2nd item
+        console.log(var2[2].innerText);     // Inner text of 3rd item
+        var2[1].innerText = "HeHe Boii";     // This will change the inner text of 2nd element 
+
+        // TAG NAME
+        let var3 = document.getElementsByTagName("h4");
+        console.log(var3);
+        console.log(var3[1].innerHTML);
+        var3[2].innerText = "Boom";         // When we are changing the values, we must mention the index otherwise the code will not run.
+        var3[2].style.color = "red";
+
+        // QUERY SELECTOR
+        let var4 = document.querySelector(".cls")       // Using query selector, we can pass any value like id, class or tagName.
+        let var5 = document.querySelector("#id")
+        let var6 = document.querySelector("h2")
+        console.log(var4);
+        console.log(var5);
+        console.log(var6);
+
+        var4.className = "changedClassName";        // To change the class name
+        var4.classList = "HEE HEE";          // If we want to assign multiple class at a single time.
+        var4.setAttribute("id","idValue");      // This pass an attribute
+        var4.setAttribute("title","titleValue")     // We can pass any attribute
+    </script>
+</body>
+</html>
