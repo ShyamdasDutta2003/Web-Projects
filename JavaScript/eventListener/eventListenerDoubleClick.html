@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click Event Listener</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #button{
+            padding: 2em 3em;
+            border-radius: 20px;
+            box-shadow: 0 0 5px 3px #00000057;
+            border: none;
+            font-size: 2rem;
+            color: #302d2dca;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">
+        Double Click
+    </button>
+
+    <script>
+        const btn = document.getElementById("button");
+        btn.addEventListener("dblclick", function (){
+            alert("You just Double Clicked \u{1F44D}")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event Listener</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #button{
+            padding: 2em 3em;
+            border-radius: 20px;
+            box-shadow: 0 0 5px 3px #00000057;
+            border: none;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #302d2dca;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Click to Change Color</button>
+
+    <script>
+        const btn = document.getElementById("button");
+        const randomColor = () => {
+            let val = "0123456789abcdef";
+            let cons = "#";
+
+            for(let i = 0; i < 6; i++){
+                cons += val[Math.floor(Math.random() * 16)];
+            }
+            return cons;
+        }
+
+        function changeColor(){
+            document.getElementById("button").style.backgroundColor = randomColor();
+        }
+
+        btn.addEventListener("click", changeColor);
+    </script>
+</body>
+</html>
