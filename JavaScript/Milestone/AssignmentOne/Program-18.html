@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Heading</title>
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #button{
+            font-size: 1.5rem;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 0 3px 2px #000000a0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">The Most Affordable Learning Platform</h1>
+
+    <button id="button">Next Heading</button>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const button = document.getElementById("button");
+        let isPWSkills = false;
+        
+        button.addEventListener("click", () => {
+            if(isPWSkills){
+                heading.innerText = "The Most Affordable Learning Platform";
+            }
+            else{
+                heading.innerText = "PW Skills"
+            }
+            isPWSkills = !isPWSkills;
+        });
+    </script>
+</body>
+</html>

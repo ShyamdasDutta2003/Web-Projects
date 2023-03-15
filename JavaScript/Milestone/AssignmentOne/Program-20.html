@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding List Items Dynamically</title>
+
+    <style>
+        #add-item-button{
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+
+        li{
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>What you'll learn</h1>
+
+    <ol id="list"></ol>
+
+    <button id="add-item-button">Add Items</button>
+    
+    <script>
+        const items = ['HTML and Semantics', 'Starting with CSS', 'Working Template', 'Mobile responsive webpages', 'Grid and Flex-box in CSS', 'Projects using HTML & CSS', 'Version Control and Git', 'Getting Started with JavaScript', 'Advance JavaScript', 'Working with DOM', 'Making Projects using HTML, CSS and JavaScript', 'Understanding Fundamental of Computer Science', 'Getting Started with Database', 'Understanding the Database', 'Starting with NodeJS and Express', 'Understanding React and its Fundamentals', 'Understanding Hooks and Routers', 'Starting and Completing Full Fledge Projects'];
+
+        const button = document.getElementById("add-item-button");
+        const list = document.getElementById("list");
+
+        let currentIndex = 0;
+
+        button.addEventListener("click", () => {
+            if(currentIndex < items.length){
+                const newItem = document.createElement("li");
+
+                newItem.innerText = items[currentIndex];
+                
+                list.appendChild(newItem);
+
+                currentIndex++;
+            }
+            else{
+                alert("All items have been added.")
+            }
+        })
+    </script>
+</body>
+</html>

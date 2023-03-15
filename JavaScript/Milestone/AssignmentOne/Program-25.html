@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving The Image</title>
+
+    <style>
+        #image{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg?auto=compress&cs=tinysrgb&w=300" alt="image" id="image">
+
+    <script>
+        const image = document.getElementById("image");
+        let x = 0, y = 0;
+
+        function moveImage(event){
+            switch(event.keyCode){
+                case 37:
+                    x -= 10;
+                    break;
+
+                case 38:
+                    y -= 10;
+                    break;
+
+                case 39:
+                    x += 10;
+                    break;
+
+                case 40:
+                    y += 10;
+                    break;
+            }
+            image.style.left = x + 'px';
+            image.style.top = y + 'px';
+        }
+
+        document.addEventListener("keydown", moveImage);
+    </script>
+</body>
+</html>

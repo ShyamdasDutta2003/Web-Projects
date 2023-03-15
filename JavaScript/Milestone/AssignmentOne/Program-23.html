@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color On Click</title>
+
+    <style>
+        body{
+            color: #333;
+            font-size: 1.5rem;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1em 2em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 3px 2px #33333359;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Changing Button</h1>
+    <button id="color-button">Change Color</button>
+
+    <script>
+        const colorButton = document.getElementById("color-button");
+        const colors = ["#81ecec", "#ffeaa7", "#a29bfe", "#fd79a8", "#ff7675", "#f6e58d", "#686de0" , "#f8c291", "#60a3bc", "#4a69bd", "#78e08f"];
+
+        colorButton.addEventListener("click", function(){
+            const randomIndex = Math.floor(Math.random() * colors.length);
+
+            const randomColor = colors[randomIndex];
+
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>

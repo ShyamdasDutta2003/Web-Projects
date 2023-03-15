@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+</head>
+<body>
+    <h1>To-Do List App</h1>
+
+    <input type="text" id="new-todo-item">
+
+    <button id="add-todo-item">Add Item</button>
+
+    <ul id="todo-list"></ul>
+
+    <script>
+        const inputField = document.getElementById("new-todo-item");
+        const button = document.getElementById("add-todo-item");
+        const todoList = document.getElementById("todo-list");
+
+        button.addEventListener("click", function(){
+            const newListItem = document.createElement("li");
+
+            newListItem.innerText = inputField.value;
+
+            todoList.appendChild(newListItem);
+
+            inputField.value = "";
+        });
+    </script>
+</body>
+</html>
