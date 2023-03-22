@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Key Press Event Listener</title>
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to right, #0000005c, #00000031),url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f90510d-3dcd-4a9c-a1ee-5dbf41625fa8/df1wzgw-d7a5863a-2f8b-4442-a51b-e6c5fcb5c8ec.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRmOTA1MTBkLTNkY2QtNGE5Yy1hMWVlLTVkYmY0MTYyNWZhOFwvZGYxd3pndy1kN2E1ODYzYS0yZjhiLTQ0NDItYTUxYi1lNmM1ZmNiNWM4ZWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xArIAwxnx2lYJc10uKa-6GoG5Y4RpXIiXHskbzuz1l8);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #display{
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        #input-box{
+            font-size: 25px;
+            padding: 1em;
+            border-radius: 10px;
+            background: #ffffff53;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <input id="input-box" type="text" placeholder="Type something...">
+
+    <script>
+        let inputBox = document.getElementById("input-box");
+        let display = document.getElementById("display");
+
+        inputBox.addEventListener("keypress", function (e){
+            display.innerText = "You have pressed " + e.key;
+        })
+    </script>
+</body>
+</html>

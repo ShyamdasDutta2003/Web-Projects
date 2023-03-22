@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Down and Key Up Event Listener</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(https://images.unsplash.com/photo-1679397113276-2717c52626a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #display{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="display">Press any key : </div>
+    </div>
+
+    <script>
+        let container = document.getElementById("container");
+        let display = document.getElementById("display");
+
+        // adding key down to the document
+        // The keydown event is fired when a key is pressed
+        document.addEventListener("keydown", function(e){
+            display.style.color = "red";
+            display.innerText = e.key + " is keyDown"
+        })
+
+        // adding a keyup event listener to the document
+        // The keyup event is fired when a key is released.
+        document.addEventListener("keyup", function(e){
+            display.style.color = "green";
+            display.innerText = e.key + " is keyUp";
+        })
+    </script>
+</body>
+</html>

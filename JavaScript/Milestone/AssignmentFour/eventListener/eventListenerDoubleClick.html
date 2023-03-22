@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click Event Listener</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://images.unsplash.com/photo-1679464349885-f6603194a0bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #button{
+            padding: 2em 3em;
+            border-radius: 20px;
+            border: none;
+            font-size: 2rem;
+            color: #302d2dca;
+            cursor: pointer;
+
+            background-image: linear-gradient(to right, #00d2ff 0%, #928DAB  51%, #00d2ff  100%);
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+        }
+
+        #button:hover{
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+         
+    </style>
+</head>
+<body>
+    <button id="button" title="Double click here">
+        Double Click
+    </button>
+
+    <script>
+        const btn = document.getElementById("button");
+        btn.addEventListener("dblclick", function (){
+            alert("You just Double Clicked \u{1F44D}")
+        })
+    </script>
+</body>
+</html>
